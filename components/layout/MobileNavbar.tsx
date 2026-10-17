@@ -1,9 +1,14 @@
 import { SearchOutlined } from "@ant-design/icons";
 import { Input } from "antd";
 import Link from "next/link";
+import type { Dispatch, SetStateAction } from "react";
 
+type MobileNavbarProps = {
+  mobileOpen: boolean;
+  setMobileOpen: Dispatch<SetStateAction<boolean>>;
+};
 
-export default function MobileNavbar({mobileOpen,setMobileOpen}) {
+export default function MobileNavbar({mobileOpen,setMobileOpen}:MobileNavbarProps) {
   return (
     <div>
          {mobileOpen && (
