@@ -20,7 +20,7 @@ export default function Brands({ brands }: BrandsProps) {
           <div>
             
 
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
               Mashhur brendlar
             </h2>
 
@@ -37,7 +37,7 @@ export default function Brands({ brands }: BrandsProps) {
 
         {/* Brands */}
         {activeBrands.length > 0 ? (
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
             {activeBrands.map((brand) => (
               <Link
                 key={brand.id}
@@ -45,7 +45,7 @@ export default function Brands({ brands }: BrandsProps) {
                 className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-green-200 hover:shadow-xl hover:shadow-green-900/5 dark:border-white/10 dark:bg-[#111414] dark:hover:border-green-500/40 sm:p-5"
               >
                 {/* Logo */}
-                <div className="mb-5 flex h-24 items-center justify-center rounded-xl bg-gray-50 p-4 dark:bg-white/[0.04]">
+                <div className="mb-5 flex h-24 items-center justify-center rounded-xl  p-4 dark:bg-white/[0.04]">
                   {brand.logo ? (
                     <img
                       src={brand.logo}
