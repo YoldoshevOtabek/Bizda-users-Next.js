@@ -13,6 +13,7 @@ export default async function Banner() {
       : Array.isArray(response?.data)
         ? response.data
         : [];
+        
 
     const banners = items
       .filter((banner) => banner.isActive)
